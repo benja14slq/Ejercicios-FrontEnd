@@ -1,0 +1,50 @@
+body, h1, h2, ul{
+            margin: 0px;
+        }
+        header{
+            background: #ff0000;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            padding-bottom: 20px;
+        }
+        main{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        #logo{
+            width: 100px;
+            height: auto;
+        }
+        #jugador{
+            width: 500px;
+            height: auto;
+            margin-top: 50px;
+        }
+        footer{
+            background: #1003ff;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        /* Selector de parentesco */
+        .redes-sociales > ul > li > a{
+            color: white;
+        }
+        .redes-sociales > ul > li > a > img{
+            width: 50px;
+            height: auto;
+        }
+        .redes-sociales > ul{
+            list-style: none;
+        }
+        .redes-sociales > ul > li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .redes-sociales{
+            width: 40%;
+            margin: 0 auto;
+        }

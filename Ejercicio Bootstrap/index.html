@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selección Chilena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="bg-dark text-light">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12 ps-5">
+          <img id="logo" src="img/logo_seleccion.png" class="img-fluid mt-3 ">
+        </div>
+        <div class="col-lg col-md col text-center">
+          <h1 class="mt-5 mb-5">Selección Chilena</h1>
+        </div>
+      </div>
+    </header>
+    <main class="containter-fluid">
+      <div class="row mt-5">
+        <div class="col-lg-5 col-md-6 col-12">
+          <div class="card">
+            <div class="card-header bg-dark bg-gradiente text-light">
+              <span>Registrar Jugador</span>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="nombre-txt" class="form-label">Nombre de Jugador</label>
+                <input type="text" placeholder="Ingrese Nombre"
+                    class="form-control" id="nombre-txt">
+              </div>
+              <div class="mb-3">
+                <label for="url-txt" class="form-label">URL de Imágen</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon3">https://</span>
+                  <input type="text" class="form-control" id="url-txt" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="posicion-select" class="form-label">Posición</label>
+                <select class="form-select " id="posicion-select">
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="equipo-txt" class="form-label">Equipo</label>
+                <input type="text" placeholder="Ingrese Equipo"
+                    class="form-control" id="equipo-txt">
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button" id="registrar-btn">Registrar</button>
+                <button class="btn btn-secondary" type="button" id="borrar-btn">Limpiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col md col">
+          <div class="card-header bg-dark bg-gradient text-light">
+            <span>Listado de Jugadores</span>
+          </div>
+          <div class="card-body">
+            <table class="table table-bordered table-hover table-stripped">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Imagen</th>
+                  <th>Posición</th>
+                  <th>Equipo</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="tabla-tbody">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script
+  </body>
+</html>
